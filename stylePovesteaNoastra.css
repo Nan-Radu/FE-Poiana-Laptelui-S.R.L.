@@ -131,7 +131,7 @@ section{
 }
 
 .hero2-text{
-    width: 100%;
+    width: 1200px;
     max-width: 620px;
     font-size: var(--p-font);
     font-weight: 400;
@@ -308,5 +308,68 @@ section{
         height: 360px;
         width: 360px;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    body {
+        width: 100%px;
+        height: 1000px;
+        top: auto;
+        bottom: 0;
+    }
+
+    .hero-img{
+        visibility: collapse;
+    }
+
+    .hero{
+        background: url(0);
+        background-size: auto;
+        background-position: center;
+    }
+
+    .hero-text{
+        height: 100px;
+        width: 500px;
+    }
+
+    .hero-text p{
+        width: auto;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .right-content{
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+    
+    .main-hero{
+        display: flex;
+        align-items: center;
+    }
+
+    .main-hero2{
+        visibility: visible;
+    }
+
+    .text-afla-mai-multe{
+        visibility: visible;
+        height: -20vh;
+    }
+
+    .hero2-text{
+        width: 200px;
+    }
+
+    .hero2-text h1{
+        width: 200px;
+    }
+
+    .hero3-text{
+        position: relative;
     }
 }

@@ -21,8 +21,52 @@
          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+         <link rel="stylesheet" href="RateUs.css">
+         <script src="SimpleStarRating.js"></script>
+
+         <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+            }
+            .product {
+                margin: 0 20px 20px;
+                padding: 50px;
+                display: grid;
+                place-items: center;
+            }
+            .outer {
+                background-image: url(outer-star.png);
+                height: 30px;
+                width: 150px;
+                background-size: 30px;
+            }
+
+            
+            .inner {
+                background-image: url(inner-star.png);
+                height: 27px;
+                width: 150px;
+                background-size: 30px;
+            }
+
+            .inner:hover{
+               background-image: url(inner-star.png);
+               height: 27px;
+               width: 150px;
+               background-size: 30px;
+               
+            }
+            
+        </style>
     
-        </head>
+      </head>
     <body>
 
         <!--- header --->
@@ -45,25 +89,47 @@
             <a href="#" class="nav-btn" style="position: relative; top: 30px;">Sign In</a>
             <div class="bx bx-menu" id="menu-icon"></div>
 
+         </header>
 
          
-
-         </header>
          
          <!--- hero --->
          <section class="hero">
-            <div class="hero-text" style="position: relative; top: -230px;">
+            <div class="hero-text" style="position: relative; top: 20px;">
                 <h5 data-aos="fade-right" data-aos-durations="1400">#Poiana Laptelui</h5>
-                <h1 data-aos="zoom-in-left" data-aos-durations="1400" data-aos-delay="200">Contacte</h1>
-
-                <div class="main-hero" data-aos="flip-down" data-aos-durations="1400" data-aos-delay="400">
-                    <a href="Contacte.html" class="btn" style="position: relative; left: 200px; top: 10px;">Vezi mai multe</a>
-                </div>
-
+                <h1 data-aos="zoom-in-left" data-aos-durations="1400" data-aos-delay="200">Rate Us</h1>
+                <div class="container" style="position: relative; top: -110px; left: -210px;">
+                  <div class="product product_1">
+                      <h1></h1>
+                      <div class="rating">
+                          <div class="outer">
+                              <div class="inner"></div>
+                          </div>
+                      </div>
+                      <div class="quantity-select">
+                        <p></p>
+                        <input id="ratebutton" type="number" value="4.4" max="5" min="0" style="position: relative; top: -65px; left: 150px; background-color: transparent; color: white;">
+                        <a href="RateUs.html">
+                            <button style=" position: relative; top: -65px; left: 160px; width: 100px; height: 20px; background-color: transparent; color: white;"> Vote </button>
+                        </a>
+                    </div>
+                  </div>
             </div>
 
+            <script>
+            const ratings = {
+                product_1: 4.4,
+            }
+            for (const rating in ratings) {
+                let ratePercentage = (ratings[rating] / 5) * 100;
+                const inner = document.querySelector(`.${rating} .inner`)
+                inner.style.width = `${ratePercentage}%`
+            }
+            
+        </script>
+
             <div class="hero-img" data-aos="zoom-in" data-aos-durations="1400">
-                <img src="file_2274790.png" style="position: relative; width: 380px; top: -200px; left: 100px;">
+                <img src="star3.png" style="position: relative; width: 380px; top: -480px; left: 900px;">
             </div>
          </section>
 
@@ -79,17 +145,6 @@
                 Scroll Down
             </a>
          </div>
-
-         <div class="hero2-text">
-            <h1 data-aos="zoom-in-left" data-aos-durations="1400" data-aos-delay="200" style="position: relative; left: 200px; top: 100px;">Contactati-ne</h1>
-            <h2 data-aos="fade-right" data-aos-durations="1400" data-aos-delay="300" style="position: relative; left: 250px; top: 125px;">Adresa: Strada Scolii Nr. 10</h2> <br>
-            <h2 data-aos="fade-right" data-aos-durations="1400" data-aos-delay="300" style="position: relative; left: 250px; top: 125px;">Telefon: 0368-440229</h2> <br>
-            <h2 data-aos="fade-right" data-aos-durations="1400" data-aos-delay="300" style="position: relative; left: 250px; top: 125px;">Email: poianalaptelui@gmail.com</h2>
-            </div>
-
-                <div class="hero-img" data-aos="zoom-in" data-aos-durations="1400">
-                    <img src="Screenshot 2025-01-10 094821.png" style="position: relative; width: 500px; top: -150px; left:1000px;">
-                </div>
 
          <!--- js link --->
          <script src="script.js"></script>
