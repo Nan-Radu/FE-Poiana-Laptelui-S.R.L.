@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name":" Lapte proaspăt",
+        "price": 7.99,
+        "image": "image/LapteCutieFE.png"
+    },
+    {
+        "id": 2,
+        "name":" Smântâna Poiana Laptelui",
+        "price": 21.99,
+        "image": "image/smantana_FE (2).png"
+    },
+    {
+        "id": 3,
+        "name":" Crema de Brânză Poiana Laptelui",
+        "price": 9.99,
+        "image": "image/cremadebranza_FE.png"
+    },
+    {
+        "id": 4,
+        "name":" Chefir Poiana Laptelui",
+        "price": 12.99,
+        "image": "image/chefir_FE (2).png"
+    },
+    {
+        "id": 5,
+        "name":" Brânzeturi Poiana Laptelui",
+        "price": 7.99,
+        "image": "image/branzeturi.jpeg"
+    },
+    {
+        "id": 6,
+        "name":" Produse premium și organice",
+        "price": 21.99,
+        "image": "image/produsePremium.jpeg"
+    }
+
+]
